@@ -2,13 +2,14 @@
 import Navigo from "navigo";
 import HomePage from "./pages/home";
 import About from "./pages/about";
-import Product from "./pages/product";
+import Product from "./pages/products";
 import AdminPost from "./pages/posts";
 import "toastr/build/toastr.min.css";
 import AdminAddPost from "./pages/posts/add";
 import AdminEditPost from "./pages/posts/edit";
 import SignUp from "./pages/signUp";
 import SignIn from "./pages/signIn";
+import ProductDetailPage from "./pages/products/detail";
 
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
@@ -33,7 +34,8 @@ router.on("/admin/*", () => {}, {
 router.on({
     "/": () => print(HomePage),
     "/about": () => print(About),
-    "/product": () => print(Product),
+    "/products": () => print(Product),
+    "/products/:id/": ({ data }) => print(ProductDetailPage, data.id),
     "/admin/posts": () => print(AdminPost),
     "/admin/posts/add": () => print(AdminAddPost),
     "/admin/news/:id/edit": ({ data }) => print(AdminEditPost, data.id),
