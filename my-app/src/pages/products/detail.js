@@ -15,6 +15,7 @@ const ProductDetailPage = {
                 <h3 class="font-semibold text-lg text-orange-500 mt-2 ">${product.title}</h3>
                 <p> ${product.desc}</p>
                 <p>Giá:  ${product.price} $</p> 
+                <input type ="number" id = "inputValue" class = "border">
                 <button data-id="${product.id}" id ="btnAddToCart">Add to cart</button>
             </div>
         </div>
@@ -23,11 +24,13 @@ const ProductDetailPage = {
     },
     afterRender() {
         const btnAddToCart = document.querySelector("#btnAddToCart");
+        const inputValue = document.querySelector("#inputValue");
+
         const { id } = btnAddToCart.dataset;
+
         btnAddToCart.addEventListener("click", async () => {
             const { data } = await get(id);
-            console.log(data);
-            addToCart({ ...data, quantity: 1 });
+            addToCart({ ...data, quantity: +(inputValue.value) || 1 });
         });
     },
 };
