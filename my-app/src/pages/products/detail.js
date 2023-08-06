@@ -1,5 +1,6 @@
+import toastr from "toastr";
 import { get } from "../../api/products";
-import addToCart from "../../ultils/cart";
+import { addToCart } from "../../ultils/cart";
 
 const ProductDetailPage = {
     async render(id) {
@@ -30,7 +31,9 @@ const ProductDetailPage = {
 
         btnAddToCart.addEventListener("click", async () => {
             const { data } = await get(id);
-            addToCart({ ...data, quantity: +(inputValue.value) || 1 });
+            addToCart({ ...data, quantity: +(inputValue.value) || 1 }, () => {
+                toastr.success(`Thêm sản phẩm ${data.title} vào giỏ hàng thành công`);
+            });
         });
     },
 };

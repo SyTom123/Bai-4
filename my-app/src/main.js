@@ -10,6 +10,7 @@ import AdminEditPost from "./pages/posts/edit";
 import SignUp from "./pages/signUp";
 import SignIn from "./pages/signIn";
 import ProductDetailPage from "./pages/products/detail";
+import CartPage from "./pages/cart";
 
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
@@ -41,5 +42,6 @@ router.on({
     "/admin/news/:id/edit": ({ data }) => print(AdminEditPost, data.id),
     "/signup": () => print(SignUp),
     "/signin": () => print(SignIn),
+    "/cart": () => print(CartPage),
 });
 router.resolve();
