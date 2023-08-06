@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "title": "iPhone 9",
+      "desc": "desc 1",
+      "id": "1"
+    },
+    {
+      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "title": "Iphone X",
+      "desc": "desc 2",
+      "id": "2"
+    },
+    {
+      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "title": "Samsung 9",
+      "desc": "desc 3",
+      "id": "3"
+    },
+    {
+      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "title": "Oppo 19",
+      "desc": "desc 4",
+      "id": "4"
+    },
+    {
+      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+      "title": "Huawa",
+      "desc": "desc 5",
+      "id": "5"
+    },
+    {
+      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "title": "Macbook",
+      "desc": "desc 6",
+      "id": "6"
+    },
+    {
+      "id": "8",
+      "title": "sỹ tóm",
+      "desc": "Sỹ ơi cố lên",
+      "thumbnail": "http://res.cloudinary.com/di8pyfpnb/image/upload/v1691224923/sytom_ldims8.jpg"
+    },
+    {
+      "thumbnail": "http://res.cloudinary.com/di8pyfpnb/image/upload/v1691218463/hinh-anh-lang-que-viet-nam_p76jiq.jpg",
+      "title": "Việt nam",
+      "desc": "Làng quê việt nam",
+      "id": "9"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$nWWbANE92UiLyTPqjYWZt.vPmaNUs6yulLiZieSVpiAhQqqaT8Flq",
+      "id": 1
+    },
+    {
+      "email": "member@gmail.com",
+      "password": "$2a$10$.wo2YLC.M205kqEzwC.gy.RiMd6ajCy4cVm2.sllj50UCXGGunPfW",
+      "id": 2
+    }
+  ]
+}
